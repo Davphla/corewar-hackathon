@@ -154,46 +154,7 @@ attack: sti   r5, r4, r1       ; (6) bomb: store r5 into memory at address (PC +
 
 ---
 
-## 5. Team Play (Multiplayer Cooperation)
-
-In team matches (e.g. 2v2), champions can **coordinate roles**:
-
-* One player handles **bombing**
-* Another handles **scouting or healing**
-* Share memory zones for **communication or triggers**
-
-```asm
-.name "Scout"
-.comment "Team player that scans and forks to cover memory"
-
-start:  ldi   %0, %10, r1        ; probe memory
-        and   r1, r1, r2         ; clear carry if r1 == 0
-        zjmp  %start             ; skip bomb if empty
-        sti   r3, %20, %1        ; write a signal bomb
-        fork  %start             ; split to expand scan range
-```
-
-```asm
-.name "Bomber"
-.comment "Relies on Scout to detect and bomb enemy"
-
-wait:   ldi   %20, %1, r1        ; read memory where Scout leaves signal
-        zjmp  %attack            ; if signal seen, go bomb
-        zjmp  %wait              ; otherwise keep checking
-
-attack: sti   r4, %100, %1       ; drop payload
-        fork  %attack            ; repeat attack from same position
-```
-
-### Tips for Team Strategy
-
-* **Signal bombs**: leave special values in memory as coordination flags.
-* **Shared labels/offsets**: agree on memory zones or signal addresses.
-* **Complement roles**: one scans, one bombs; or one forks, one guards.
-
----
-
-## 6. Common Strategies
+## 5. Common Strategies
 
 ### 🧨 Bombing
 - **Blind Bombing**: Use `sti` or `st` to drop "DAT" bombs at calculated intervals (e.g. `sti r1, r2, r3`).
@@ -220,7 +181,7 @@ attack: sti   r4, %100, %1       ; drop payload
 
 ---
 
-## 7. Tuning Tips
+## 6. Tuning Tips
 
 * **Bomb Size**: keep bombs small (`DAT 1`) so coding byte + args fit in 3 bytes.
 * **Step Size**: pick a prime (e.g. `#17`) to avoid lining up with opponents’ scans.
