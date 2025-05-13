@@ -96,7 +96,7 @@ Labels (`%:label` or `:label`) are replaced by a relative offset (signed) from t
 
 | Code | Mnemonic | #Args | Argument Types                                            | Effects / Notes                                          |
 | :--: | :------: | :---: | :-------------------------------------------------------- | :------------------------------------------------------- |
-| 0x01 |  `live`  |   1   | **IDX**                                                   | Announce "I'm alive"—keeps process alive; no coding byte |
+| 0x01 |  `live`  |   1   | **DIR**                                                   | Announce "I'm alive"—keeps process alive; no coding byte |
 | 0x02 |   `ld`   |   2   | **DIR**/**IND**, **REG**                                  | Load DIR/IND → REG; sets carry                           |
 | 0x03 |   `st`   |   2   | **REG**, **REG**/**IND**                                  | Store REG → IND/REG                                      |
 | 0x04 |   `add`  |   3   | **REG**, **REG**, **REG**                                 | REG + REG → REG; sets carry                              |

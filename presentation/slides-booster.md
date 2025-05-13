@@ -105,6 +105,7 @@ graph LR
   A[Main] --> B[Init]
   B --> C[Load Champions .cor]
   C --> D[Create Processes]
+  D --> B
   B --> E([Start Execution Loop])
 ```
 
