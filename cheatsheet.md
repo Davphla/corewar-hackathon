@@ -171,7 +171,7 @@ attack: sti   r5, r4, r1       ; (6) bomb: store r5 into memory at address (PC +
 - **Dual Roles**: Fork once — one process attacks, one runs `live` in a safe loop.
 
 ### 🌀 Imp Ring
-- **Imp**: A simple `mov 0, 1` (or `st r1, 1`) loop that keeps moving forward and writing itself.
+- **Imp**: A simple `st 0, 1` (or `st r1, 1`) loop that keeps moving forward and writing itself.
 - **Imp Spiral**: Multiple imps running in staggered cycles to cover more memory.
 
 ### 🛡️ Survival
