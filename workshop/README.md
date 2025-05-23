@@ -3,8 +3,8 @@ Welcome to the arena.
 You have to beat every opponents with 
 
 ## 1 - Survivor
-Opponent : Bomber
-Strenght : Extremely aggressive
+Opponent : unnamed
+Strenght : Extremely passive
 Weakness : Never says live
 
 ## 2 - Attack 

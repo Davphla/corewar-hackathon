@@ -1,6 +1,4 @@
-.name "Survive"
+.name "Survivor"
 .comment "Live"
 
-# Write your code
-live: live %1
-
+# Hint : You should survive, nothing more.
