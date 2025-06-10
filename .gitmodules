@@ -1,3 +1,3 @@
-[submodule "Corewar"]
-	path = Corewar
-	url = git@github.com:Nadal-B/Corewar.git
+[submodule "corewar"]
+	path = corewar
+	url = git@github.com:bsukiennik/corewar.git
