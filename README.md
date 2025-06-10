@@ -18,13 +18,14 @@ Don't hesitate to contact your local assistant if you need any help.
 
 # Your Goal 
 
-You need to create **the deadliest Champion** of your city, using the given `Virtual Machine`.
+You need to create **the deadliest Champion**, using the given `Virtual Machine`.
 
 During the Tournament, you will have to fight random opponent for **3 rounds** in **1v1**, using the choosen champion of your submitted pool.
-Each fight leads to a Loser and a Winner, and the winner of all Win the competition 🏆.
+Each match runs until one champion remains active. You can have at most 4 champions.
+The winner advances to next round and the winner of all win the competition. 🏆
 
-At the submission day of the Tournament, you will have to submit your champion(s) on the Git repository given by your local organizer.
-Each Champion needs to have (Before the deadline):
+At the submission day of the Tournament, you will submit your champion(s) on the Git repository given by your local organizer.
+Each champion needs to have (Before the deadline):
 - `$(name).s` file
 - `id.md` **Identity File**
 - `logo.png` (Optional)
