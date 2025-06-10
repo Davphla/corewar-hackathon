@@ -136,20 +136,20 @@ live:  live  %1               ; repeat “I’m alive” each cycle
 .name "Balance"
 .comment  "Balanced offense & survival"
 
-; ------- Setup -------
-        sti   r1, %:live, %1   ; (1) write my player-ID (r1) into the cell at (live+1)
-        fork  %:attack         ; (2) spawn a secondary process starting at label “ok”
-        ld    %100, r4         ; (3) initialize r4 = 100 (our bombing offset seed)
-        ld    %2,   r5         ; (4) initialize r5 = 2   (our step size)
+# ------- Setup -------
+        sti   r1, %:live, %1   # (1) write my player-ID (r1) into the cell at (live+1)
+        fork  %:attack         # (2) spawn a secondary process starting at label “ok”
+        ld    %100, r4         # (3) initialize r4 = 100 (our bombing offset seed)
+        ld    %2,   r5         # (4) initialize r5 = 2   (our step size)
 
-; ------- Survive -------
-live:   live  %1               ; (5) declare “I’m still alive” (keeps us from dying)
+# ------- Survive -------
+live:   live  %1               # (5) declare “I’m still alive” (keeps us from dying)
         
-; ------- Attack -------
-attack: sti   r5, r4, r1       ; (6) bomb: store r5 into memory at address (PC + (r4 % IDX_MOD)) + r1
-        add   r4, r5, r4       ; (7) r4 += r5  — advance our bombing offset
-        ld    %0,   r8         ; (8) load zero into r8 (reset carry = 1, so next jump always taken)
-        zjmp  %:live           ; (9) jump back to “live” to repeat the cycle
+# ------- Attack -------
+attack: sti   r5, r4, r1       # (6) bomb: store r5 into memory at address (PC + (r4 % IDX_MOD)) + r1
+        add   r4, r5, r4       # (7) r4 += r5  — advance our bombing offset
+        ld    %0,   r8         # (8) load zero into r8 (reset carry = 1, so next jump always taken)
+        zjmp  %:live           # (9) jump back to “live” to repeat the cycle
 ```
 
 ---
