@@ -183,14 +183,9 @@ attack: sti   r5, r4, r1       ; (6) bomb: store r5 into memory at address (PC +
 
 ## 6. Tuning Tips
 
-* **Bomb Size**: keep bombs small (`DAT 1`) so coding byte + args fit in 3 bytes.
+* **Bomb Size**: keep bombs small so coding byte + args fit in 4 bytes.
 * **Step Size**: pick a prime (e.g. `#17`) to avoid lining up with opponents’ scans.
 * **Split Rate**: ~1 split per 50 cycles; too many slows your bombing.
-* **Label Offsets**: precompute all label positions, then on write do
-
-  ```c
-  offset = label_addr - inst_addr;
-  ```
 * **Test Extremes**: run with 2–4 opponents of varied strategies to balance offense vs. survivability.
 
 ---
