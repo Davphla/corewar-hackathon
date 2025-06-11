@@ -11,7 +11,7 @@
 # Tournois Corewar
 
 Welcome to the **Corewar Tournament**!
-
+ 
 The goal is to create the best Champion using `Redcode` over a week span.
 Do your best, all the resources are available.
 Don't hesitate to contact your local assistant if you need any help.
