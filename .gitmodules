@@ -1,6 +1,3 @@
-[submodule "corewar"]
-	path = corewar
-	url = git@github.com:bsukiennik/corewar.git
 [submodule "corewar-vscode-extension"]
 	path = corewar-vscode-extension
 	url = git@github.com:Davphla/corewar-vscode-extension.git
