@@ -4,12 +4,6 @@
 [submodule "corewar-vscode-extension"]
 	path = corewar-vscode-extension
 	url = git@github.com:Davphla/corewar-vscode-extension.git
-[submodule "competition/vivicat"]
-	path = competition/vivicat
-	url = git@github.com:VivicatcHub/CorewarBestChampion.git
-[submodule "competition/leonard"]
-	path = competition/leonard
-	url = git@github.com:LeonardLeroy/CorewarChampion.git
 [submodule "competition/leetspeaker"]
 	path = competition/leetspeaker
 	url = git@github.com:L33TSP34KER/core-wars.git
@@ -28,3 +22,15 @@
 [submodule "competition/karma"]
 	path = competition/karma
 	url = git@github.com:recule556688/Karma_corewar.git
+[submodule "competition/leonard"]
+	path = competition/leonard
+	url = git@github.com:LeonardLeroy/CorewarChampion.git
+[submodule "competition/vivicat"]
+	path = competition/vivicat
+	url = git@github.com:VivicatcHub/CorewarBestChampion.git
+[submodule "competition/jan"]
+	path = competition/jan
+	url = git@github.com:JanNguy/HackthonCorewar.git
+[submodule "competition/charles"]
+	path = competition/charles
+	url = git@github.com:Charles-n1/My_champion_corewar_-tournament.git
