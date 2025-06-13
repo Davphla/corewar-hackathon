@@ -4,17 +4,17 @@
 [submodule "corewar-vscode-extension"]
 	path = corewar-vscode-extension
 	url = git@github.com:Davphla/corewar-vscode-extension.git
-[submodule "competition/Issa"]
-	path = competition/Issa
+[submodule "competition/issa"]
+	path = competition/issa
 	url = git@github.com:Issa2707/Corwar-Hackaton-Issa.git
-[submodule "competition/Zertrox123"]
-	path = competition/Zertrox123
+[submodule "competition/zertrox123"]
+	path = competition/zertrox123
 	url = git@github.com:Zertrox123/champion_corewar.git
-[submodule "competition/Vivicat"]
-	path = competition/Vivicat
+[submodule "competition/vivicat"]
+	path = competition/vivicat
 	url = git@github.com:VivicatcHub/CorewarBestChampion.git
-[submodule "competition/Leonard"]
-	path = competition/Leonard
+[submodule "competition/leonard"]
+	path = competition/leonard
 	url = git@github.com:LeonardLeroy/CorewarChampion.git
 [submodule "competition/charles"]
 	path = competition/charles
