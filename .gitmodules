@@ -28,3 +28,6 @@
 [submodule "competition/fillou5"]
 	path = competition/fillou5
 	url = git@github.com:fillou5/corwar-tournament.git
+[submodule "competition/kylian"]
+	path = competition/kylian
+	url = git@github.com:Fire-Ya/corewarchamp.git
